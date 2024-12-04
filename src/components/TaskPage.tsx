@@ -139,12 +139,14 @@ const TaskPage = () => {
               </h1>
             </div>
           </Link>
+          <Link to={'/friends'}>
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={friends} alt="img" className="" />
             <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
               Friends
             </h1>
           </div>
+          </Link>
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={stats} alt="img" className="" />
             <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
