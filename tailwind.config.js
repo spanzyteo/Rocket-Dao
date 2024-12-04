@@ -12,6 +12,9 @@ export default {
         'special-offer-gradient':
           'linear-gradient(180deg, #2C1F01 0%, #121214 29%)',
       },
+      text: {
+        'custom': 'linear-gradient(90deg, #F6C001 0%, #BB7C06 100%)',
+      },
     },
   },
   plugins: [],

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import rocket from '../assets/rocket-1.png'
 import gift from '../assets/gift.png'
 import claim from '../assets/claim.png'
+import { Link } from 'react-router-dom'
 const SpecialOffer = () => {
   const [progress, setProgress] = useState(0)
   const [launchProgress, setLaunchProgress] = useState(0)
@@ -92,10 +93,12 @@ const SpecialOffer = () => {
           </div>
         </div>
         {launchProgress === 100 && (
-          <button className="mt-[49px] flex items-center justify-center bg-launch-button-gradient h-[65px] w-[300px] rounded-xl gap-2">
+          <Link to={'/home'}>
+          <button className="mt-[49px] flex items-center justify-center bg-launch-button-gradient h-[65px] w-[300px] rounded-xl gap-2 hover:opacity-80 active:opacity-75">
             <h1 className="font-extrabold text-[20px] uppercase">Claim</h1>
             <img src={claim} alt="rocket" className="w-[28px] h-[28px]" />
           </button>
+          </Link>
         )}
       </div>
     </div>
