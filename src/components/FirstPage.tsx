@@ -14,12 +14,17 @@ import boom from '../assets/boom-vector.png'
 import task1 from '../assets/task-vector.png'
 import friends from '../assets/friends-vector.png'
 import stats from '../assets/stats-vector.png'
+import { Link } from 'react-router-dom'
 const FirstPage = () => {
   return (
     <div className="h-[932px] relative bg-[#121214] flex flex-col">
       <img src={coin1} alt="" className="lg:h-[120px] w-[395px] mx-auto" />
-      <img src={coin2} alt="img" className='absolute top-[96px] right-0' />
-      <img src={coin3} alt="img" className='absolute top-[163px] left-[0px] h-[271px] ' />
+      <img src={coin2} alt="img" className="absolute top-[96px] right-0" />
+      <img
+        src={coin3}
+        alt="img"
+        className="absolute top-[163px] left-[0px] h-[271px] "
+      />
       <img src={union} alt="img" className="w-[85px] h-[73px] mx-auto" />
       <h1 className="uppercase font-custom text-[#B6B6B6] mx-auto font-semibold text-[22px] mt-[18px]">
         My Bounties
@@ -81,7 +86,7 @@ const FirstPage = () => {
         <img src={navigate} alt="img" className="h-[31px] w-[31px]" />
       </button>
       <div className="mt-[28px] h-[113px] bg-[#0E0E10] flex items-center justify-center">
-        <div className='flex items-center w-[85%] justify-between'>
+        <div className="flex items-center w-[85%] justify-between">
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={home} alt="img" className="h-[21px] w-[21px]" />
             <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
@@ -94,12 +99,14 @@ const FirstPage = () => {
               Boom
             </h1>
           </div>
-          <div className="flex flex-col items-center h-[58px] justify-between">
-            <img src={task1} alt="img" className="" />
-            <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
-              Task
-            </h1>
-          </div>
+          <Link to={'/task'}>
+            <div className="flex flex-col items-center h-[58px] justify-between">
+              <img src={task1} alt="img" className="" />
+              <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
+                Task
+              </h1>
+            </div>
+          </Link>
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={friends} alt="img" className="" />
             <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
