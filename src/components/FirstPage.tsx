@@ -17,7 +17,7 @@ import stats from '../assets/stats-vector.png'
 import { Link } from 'react-router-dom'
 const FirstPage = () => {
   return (
-    <div className="h-[932px] relative bg-[#121214] flex flex-col">
+    <div className="relative bg-[#121214] flex flex-col overflow-y-auto">
       <img src={coin1} alt="" className="lg:h-[120px] w-[395px] mx-auto" />
       <img src={coin2} alt="img" className="absolute top-[96px] right-0" />
       <img
@@ -78,14 +78,14 @@ const FirstPage = () => {
         alt="img"
         className="mt-[28px] w-[58px] h-[58px] mx-auto"
       />
-      <button className="mt-[17px] flex items-center justify-center bg-launch-button-gradient h-[65px] w-[300px] rounded-xl gap-4 hover:opacity-80 active:opacity-75 mx-auto ">
+      <button className="mt-[17px] flex items-center justify-center bg-launch-button-gradient h-[65px] w-[300px] rounded-xl gap-4 hover:opacity-80 active:opacity-75 mx-auto mb-32">
         <img src={wallet} alt="img" className="w-[24px] h-[24px]" />
         <h1 className="font-custom font-semibold text-[15px] text-[#000000]">
           Ton Wallet Connect
         </h1>
         <img src={navigate} alt="img" className="h-[31px] w-[31px]" />
       </button>
-      <div className="mt-[28px] h-[113px] bg-[#0E0E10] flex items-center justify-center">
+      <div className="mt-[28px] fixed bottom-0 right-0 left-0 h-[113px] bg-[#0E0E10] flex items-center justify-center">
         <div className="flex items-center w-[85%] justify-between">
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={home} alt="img" className="h-[21px] w-[21px]" />
@@ -108,19 +108,21 @@ const FirstPage = () => {
             </div>
           </Link>
           <Link to={'/friends'}>
-          <div className="flex flex-col items-center h-[58px] justify-between">
-            <img src={friends} alt="img" className="" />
-            <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
-              Friends
-            </h1>
-          </div>
+            <div className="flex flex-col items-center h-[58px] justify-between">
+              <img src={friends} alt="img" className="" />
+              <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
+                Friends
+              </h1>
+            </div>
           </Link>
+          <Link to={'/stats'}>
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={stats} alt="img" className="" />
             <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
               Stats
             </h1>
           </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import FirstPage from './components/FirstPage'
 import TaskPage from './components/TaskPage'
 import Completed_Task from './components/Completed_Task'
 import FriendsPage from './components/FriendsPage'
+import StatsPage from './components/StatsPage'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/task' element={<TaskPage />}/>
         <Route path='/completed-task' element={<Completed_Task />}/>
         <Route path='/friends' element={<FriendsPage />}/>
+        <Route path='/stats' element={<StatsPage />}/>
       </Routes>
     </>
   )

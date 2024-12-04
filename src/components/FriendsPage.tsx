@@ -19,7 +19,7 @@ const FriendsPage = () => {
     setReferral(true)
   }
   return (
-    <div className="h-] bg-[#121214] flex flex-col overflow-y-auto">
+    <div className="bg-[#121214] flex flex-col overflow-y-auto">
       <h1 className="mt-[67px] font-custom font-bold text-[30px] text-[#FFFFFF] mx-auto">
         Invite Friends
       </h1>
@@ -209,12 +209,14 @@ const FriendsPage = () => {
               </h1>
             </div>
           </Link>
-          <div className="flex flex-col items-center h-[58px] justify-between">
-            <img src={stats} alt="img" className="" />
-            <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
-              Stats
-            </h1>
-          </div>
+          <Link to={'/stats'}>
+            <div className="flex flex-col items-center h-[58px] justify-between">
+              <img src={stats} alt="img" className="" />
+              <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
+                Stats
+              </h1>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
