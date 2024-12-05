@@ -17,25 +17,25 @@ import stats from '../assets/stats-vector.png'
 import { Link } from 'react-router-dom'
 const FirstPage = () => {
   return (
-    <div className="relative bg-[#121214] flex flex-col overflow-y-auto">
-      <img src={coin1} alt="" className="lg:h-[120px] w-[395px] mx-auto" />
-      <img src={coin2} alt="img" className="absolute top-[96px] right-0" />
+    <div className="relative bg-[#121214] flex flex-col h-[100vh] lg:h-[700px] overflow-hidden">
+      <img src={coin1} alt="" className="h-[50px] w-[200px] mx-auto" />
+      <img src={coin2} alt="img" className="absolute top-[96px] right-0 w-[60px]" />
       <img
         src={coin3}
         alt="img"
-        className="absolute top-[163px] left-[0px] h-[271px] "
+        className="absolute top-[100px] left-[0px] h-[150px] w-[60px]"
       />
-      <img src={union} alt="img" className="w-[85px] h-[73px] mx-auto" />
-      <h1 className="uppercase font-custom text-[#B6B6B6] mx-auto font-semibold text-[22px] mt-[18px]">
+      <img src={union} alt="img" className="w-[85px] mt-[-0.4rem] h-[73px] mx-auto" />
+      <h1 className="uppercase font-custom text-[#B6B6B6] mx-auto font-semibold text-[22px] mt-[8px]">
         My Bounties
       </h1>
-      <h1 className="font-custom text-[48px] font-extrabold mt-[28px] mx-auto bg-clip-text text-transparent bg-gradient-to-r from-[#FFD600] to-[#FF9D09]">
+      <h1 className="font-custom text-[48px] font-extrabold mx-auto bg-clip-text text-transparent bg-gradient-to-r from-[#FFD600] to-[#FF9D09] mt-[-0.8rem]">
         500,000
       </h1>
-      <h1 className="mt-[17px] uppercase font-custom font-normal mx-auto text-[22px] text-[#B6B6B6]">
+      <h1 className="mt-[-0.8rem] uppercase font-custom font-normal mx-auto text-[22px] text-[#B6B6B6]">
         Vase
       </h1>
-      <div className="mt-[57px] flex flex-col  lg:w-[380px] w-[90%] h-[211px] gap-2 mx-auto justify-between ">
+      <div className="mt-[2px] flex flex-col  lg:w-[380px] w-[90%] h-[211px] gap-2 mx-auto justify-between ">
         <div className="flex items-center w-full h-[63px] bg-[#1B1A19] border-r border-r-[#3A3939] border-b border-b-[#3A3939] rounded-lg">
           <img
             src={telegram}
@@ -76,16 +76,16 @@ const FirstPage = () => {
       <img
         src={message}
         alt="img"
-        className="mt-[28px] w-[58px] h-[58px] mx-auto"
+        className="mt-[12px] w-[58px] h-[58px] mx-auto"
       />
-      <button className="mt-[17px] flex items-center justify-center bg-launch-button-gradient h-[65px] w-[300px] rounded-xl gap-4 hover:opacity-80 active:opacity-75 mx-auto mb-32">
+      <button className="mt-[8px] flex items-center justify-center bg-launch-button-gradient h-[65px] w-[300px] rounded-xl gap-4 hover:opacity-80 active:opacity-75 mx-auto ">
         <img src={wallet} alt="img" className="w-[24px] h-[24px]" />
         <h1 className="font-custom font-semibold text-[15px] text-[#000000]">
           Ton Wallet Connect
         </h1>
         <img src={navigate} alt="img" className="h-[31px] w-[31px]" />
       </button>
-      <div className="mt-[28px] fixed bottom-0 right-0 left-0 h-[113px] bg-[#0E0E10] flex items-center justify-center">
+      <div className="fixed bottom-0 right-0 left-0 h-[70px] bg-[#0E0E10] flex items-center justify-center">
         <div className="flex items-center w-[85%] justify-between">
           <div className="flex flex-col items-center h-[58px] justify-between">
             <img src={home} alt="img" className="h-[21px] w-[21px]" />
