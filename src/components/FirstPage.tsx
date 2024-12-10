@@ -14,6 +14,7 @@ import friends from '../assets/friends-vector.png'
 import stats from '../assets/stats-vector.png'
 import { Link } from 'react-router-dom'
 const FirstPage = () => {
+  // commit changes
   return (
     <div className="relative bg-[#121214] flex flex-col h-[100vh] lg:h-[700px] overflow-hidden">
       <img src={coin1} alt="" className="h-[50px] w-[200px] mx-auto" />
