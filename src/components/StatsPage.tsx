@@ -3,7 +3,7 @@ import avatar from '../assets/avatar-vector.png'
 import { Link } from 'react-router-dom'
 import boom from '../assets/boom-vector.png'
 import friends from '../assets/friends-vector.png'
-import stats from '../assets/active-stats.png'
+import stats from '../assets/active-stats.svg'
 import task from '../assets/task-vector.png'
 import home1 from '../assets/home-1.png'
 const StatsPage = () => {
@@ -115,41 +115,39 @@ const StatsPage = () => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-0 right-0 left-0 h-[70px] bg-[#0E0E10] flex items-center justify-center ">
+      <div className="fixed bottom-0 right-0 left-0 h-[100px] bg-[#0E0E10] flex items-center justify-center">
         <div className="flex items-center w-[85%] justify-between">
           <Link to={'/home'}>
-            <div className="flex flex-col items-center h-[58px] justify-between">
+            <div className="flex flex-col items-center h-[50px] justify-between">
               <img src={home1} alt="img" className="h-[21px] w-[21px]" />
               <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
                 Home
               </h1>
             </div>
           </Link>
-          <div className="flex flex-col items-center h-[58px] justify-between">
-            <img src={boom} alt="img" className="h-[21px] w-[21px]" />
-            <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
-              Boom
-            </h1>
-          </div>
           <Link to={'/task'}>
-            <div className="flex flex-col items-center h-[58px] justify-between">
-              <img src={task} alt="img" className="" />
+            <div className="flex flex-col items-center h-[50px] justify-between">
+              <img src={task} alt="img" className="w-[15px] h-[21px]" />
               <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
                 Task
               </h1>
             </div>
           </Link>
           <Link to={'/friends'}>
-            <div className="flex flex-col items-center h-[58px] justify-between">
-              <img src={friends} alt="img" className="" />
+            <div className="flex flex-col items-center h-[50px] justify-between">
+              <img
+                src={friends}
+                alt="img"
+                className="w-[27px] h-[21px]"
+              />
               <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
                 Friends
               </h1>
             </div>
           </Link>
           <Link to={'/stats'}>
-            <div className="flex flex-col items-center h-[58px] justify-between">
-              <img src={stats} alt="img" className="" />
+            <div className="flex flex-col items-center h-[50px] justify-between">
+              <img src={stats} alt="img" className="h-[21px] w-[21px]" />
               <h1 className="font-custom text-[12px] font-normal text-[#FFFFFF]">
                 Stats
               </h1>

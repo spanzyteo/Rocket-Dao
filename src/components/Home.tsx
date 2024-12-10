@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import img from '../assets/bg-image.png'
-import union from '../assets/Union.png'
+import logo from '../assets/rocket-logo.png'
 import rocket from '../assets/rocket.png'
 import { Link } from 'react-router-dom'
 
@@ -33,20 +33,20 @@ const Home = () => {
         <div className="flex flex-col items-center overflow-y-hidden">
           <div className="flex flex-col items-center">
             <img
-              src={union}
+              src={logo}
               alt="img"
               className="mx-auto w-[64px] h-[55px] mt-[75px]"
             />
-            <h1 className="mt-2 font-custom text-[#B6B6B6] text-[20px] font-extrabold shadow-md">
+            <h1 className="mt-2 font-custom text-[#B6B6B6] font-extrabold shadow-md">
               ROCKET DAO
             </h1>
-            <h1 className="mt-[50px] font-custom text-[#B6B6B6] text-[20px] font-extrabold">
+            <h1 className="mt-[50px] font-custom text-[#B6B6B6] font-extrabold">
               Hi Smith John
             </h1>
-            <h1 className="mt-[3px] font-custom text-[#B6B6B6] text-[20px] font-extrabold">
+            <h1 className="mt-[3px] font-custom text-[#B6B6B6] font-extrabold">
               Welcome To The Universe
             </h1>
-            <h1 className="mt-[50px] font-custom text-[#B6B6B6] text-[16.74px] font-extrabold uppercase">
+            <h1 className="mt-[50px] font-custom text-[#B6B6B6] font-extrabold uppercase">
               Launching your
             </h1>
             <h1 className="mt-[3.74px] font-custom text-[#D9B601] text-[36.46px] font-extrabold uppercase">
