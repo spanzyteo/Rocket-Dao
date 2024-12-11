@@ -1,7 +1,6 @@
 import medal from '../assets/medal.png'
 import avatar from '../assets/avatar-vector.png'
 import { Link } from 'react-router-dom'
-import boom from '../assets/boom-vector.png'
 import friends from '../assets/friends-vector.png'
 import stats from '../assets/active-stats.svg'
 import task from '../assets/task-vector.png'
